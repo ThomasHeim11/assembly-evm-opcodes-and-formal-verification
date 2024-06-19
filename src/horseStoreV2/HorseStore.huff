@@ -1,4 +1,28 @@
+/* HorseStore Interface*/
+#define function mintHorse() nonpayable returns()
+#define function feedHorse(uint256) nonpayable returns()
+#define function isHappyHorse(uint256) view returns(bool)
+#define function horseIdToFedTimeStamp(uint256) view returns(uint256)
+#define function HORSE_HAPPY_IF_FED_WITHIN() view returns(uint256)
+
 #define macro MAIN() = takes(0) return(0){
     0x00 calldataload 0x0E shr              // [function_selector]
     
+    dup1 __FUN_SIG(mintHorse) eq mintHorse jumpi
+    dup1 __FUN_SIG(feedHorse) eq feedHorse jumpi
+    dup1 __FUN_SIG(isHappyHorse) eq isHappyHorse jumpi
+    dup1 __FUNC_SIG(horseIdToFedTimeStamp) eq horseIdToFedTimeStamp jumpi
+    dup1 __FUN_SIG(HORSE_HAPPY_IF_FED_WITHIN) eq HORSE_HAPPY_IF_FED_WITHIN jumpi
+
+    feedHorse:
+        FEED_HORSE()
+    mintHorse:
+        MINT_HORSE()
+    isHappyHorse:
+        IS_HAPPY_HORSE()
+    horseIdToFedTimeStamp:
+        HORSE_ID_TO_FED_TIMESTAMP()
+    horseHappyFedWithin:
+        HORSE_HAPPY_IF_FED_WITHIN()
+
 }
