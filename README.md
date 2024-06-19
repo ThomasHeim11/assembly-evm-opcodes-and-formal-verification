@@ -1,6 +1,7 @@
 <p align="center">
-<img src="./images/horse-store.png" width="400" alt="horse-store">
+<img src="![image](https://github.com/ThomasHeim11/assembly-evm-opcodes-and-formal-verification/assets/106417552/df9e5443-f734-413c-94ed-d26f4bba1854)" width="400" alt="horse-store">
 <br/>
+
 
 # Horse Store 
 
