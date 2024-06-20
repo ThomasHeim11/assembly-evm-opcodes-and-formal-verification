@@ -11,6 +11,10 @@ contract MathMastersTest is Base_Test {
         assertEq(MathMasters.mulWad(369, 271), 0);
     }
 
+    function testMulRevert() public {
+        MathMasters.mulWad(type(uint256).max, type(uint256).max);
+    }
+
     function testMulWadFuzz(uint256 x, uint256 y) public pure {
         // Ignore cases where x * y overflows.
         unchecked {
