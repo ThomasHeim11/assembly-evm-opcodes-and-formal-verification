@@ -1,8 +1,10 @@
-![alt text](image-1.png)
+<p align="center">
+<img src="./images/math-master.png" width="400" alt="math-master">
+<br/>
 
 # Math Master
 
-_This codebase was inspired by the [solady](https://github.com/Vectorized/solady), [obront.eth](https://twitter.com/zachobront), and [solmate](https://github.com/transmissions11/solmate) codebases. Huge thanks to [karma](https://twitter.com/0xkarmacoma) for the help on FV with Halmos._
+*This codebase was inspired by the [solady](https://github.com/Vectorized/solady), [obront.eth](https://twitter.com/zachobront), and [solmate](https://github.com/transmissions11/solmate) codebases. Huge thanks to [karma](https://twitter.com/0xkarmacoma) for the help on FV with Halmos.*
 
 - [Math Master](#math-master)
 - [About](#about)
@@ -34,7 +36,7 @@ _This codebase was inspired by the [solady](https://github.com/Vectorized/solady
   - [certoraRun](https://docs.certora.com/en/latest/docs/user-guide/getting-started/install.html)
     - You'll know you did it right if you can run `certoraRun --version` and you get an output like: `certora-cli 6.3.1`
 
-_Note: I like to install `certoraRun` and `halmos` using [pipx](https://github.com/pypa/pipx) instead of `pip`._
+*Note: I like to install `certoraRun` and `halmos` using [pipx](https://github.com/pypa/pipx) instead of `pip`.*
 
 ## Quickstart
 
@@ -66,14 +68,12 @@ forge coverage --report debug
 
 # Audit Scope Details
 
-- Commit Hash:
-
+- Commit Hash: 
 ```
 c7643faa1a188a51b2167b68250816f90a9668c6
 ```
 
 - In Scope:
-
 ```
 #-- MathMasters.sol
 ```
@@ -81,7 +81,7 @@ c7643faa1a188a51b2167b68250816f90a9668c6
 ## Compatibilities
 
 - Solc Version: xx
-- Chain(s) to deploy contract to:
+- Chain(s) to deploy contract to: 
   - Ethereum
 - Tokens:
   - None
