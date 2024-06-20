@@ -1,0 +1,26 @@
+# Compiler files
+cache/
+out/
+
+# Ignores development broadcast logs
+!/broadcast
+/broadcast/*/31337/
+/broadcast/**/dry-run/
+
+# Docs
+docs/
+
+# Dotenv file
+.env
+/broadcast/
+.DS_Store
+
+# Certora
+.certora_internal/
+.hypothesis/ 
+
+annotated*
+gambit*
+mutations*
+
+collect.json
