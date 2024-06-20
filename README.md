@@ -136,9 +136,6 @@ Note: You can get through this course with just having an advanced grasp of soli
   - This will be important for when things get hard
   - Is it money? Save web3? Become someone? Write down as many reasons as possible. 
 
-### Section 0 NFT
-- *No section 0 challenge NFT for this one!*
-
 🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯
 <p align="right">(<a href="#table-of-contents">back to top</a>) ⬆️</p>
 
