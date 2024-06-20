@@ -1,6 +1,4 @@
-<p align="center">
-<img src="./images/math-master.png" width="400" alt="math-master">
-<br/>
+![alt text](image-1.png)
 
 # Math Master
 
