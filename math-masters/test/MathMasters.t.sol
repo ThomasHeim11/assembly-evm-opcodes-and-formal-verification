@@ -3,6 +3,7 @@ pragma solidity ^0.8.3;
 
 import {Base_Test, console2} from "./Base_Test.t.sol";
 import {MathMasters} from "src/MathMasters.sol";
+import {CompactCodeBase} from "./CompactCodeBase.sol";
 
 contract MathMastersTest is Base_Test {
     function testMulWad() public {
@@ -79,5 +80,10 @@ contract MathMastersTest is Base_Test {
 
     function testSqrtFuzzSolmate(uint256 x) public pure {
         assert(MathMasters.sqrt(x) == solmateSqrt(x));
+    }
+
+    function testCompactFuzz(uint256 x) public {
+        CompactCodeBase cc = new CompactCodeBase();
+        assertEq(cc.mathMastersTopHalf(x), cc.solmateTopHalf(x));
     }
 }
