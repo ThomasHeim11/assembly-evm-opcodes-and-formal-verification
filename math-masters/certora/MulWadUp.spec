@@ -14,3 +14,6 @@ rule ckeck_testMulWadUpFuzz(uint256 x, uint256 y) {
             assert(result == assert_uint256(expected));
         
     }
+
+    invariant mulWadUpInvariant(uint256 x, uint256 y) 
+        mulWadUp(x,y) == assert_uint256(x * y == 0 ? 0 : (x * y - 1) / WAD() + 1)
