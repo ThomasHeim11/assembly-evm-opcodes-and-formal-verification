@@ -10,3 +10,9 @@
 [submodule "sc-exploits-minimized/lib/kontrol-cheatcodes"]
 	path = sc-exploits-minimized/lib/kontrol-cheatcodes
 	url = https://github.com/runtimeverification/kontrol-cheatcodes
+[submodule "gas-bad-nft-marketplace/lib/forge-std"]
+	path = gas-bad-nft-marketplace/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "gas-bad-nft-marketplace/lib/openzeppelin-contracts"]
+	path = gas-bad-nft-marketplace/lib/openzeppelin-contracts
+	url = https://github.com/openzeppelin/openzeppelin-contracts
