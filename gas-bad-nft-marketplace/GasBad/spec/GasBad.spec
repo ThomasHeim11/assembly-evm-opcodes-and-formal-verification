@@ -43,9 +43,9 @@ rule call_any_function_should_result_in_each_contract_having_the_same_state(meth
     address seller;
 
     require(gasBadNftMarketplace).getProceeds(e,seller) = nftMarketplace.getProceeds(seller);
-    require(gasBadNftMarketplace.getListing(listingAddr, tokenId).price == nftMarketplace.getListing
+    require(gasBadNftMarketplace.getListing(e,listingAddr, tokenId).price == nftMarketplace.getListing
     (listingAddr, tokenId).price); 
-    require(gasBadNftMarketplace.getListing(listingAddr, tokenId).seller == nftMarketplace.getListing
+    require(gasBadNftMarketplace.getListing(e,listingAddr, tokenId).seller == nftMarketplace.getListing
     (listingAddr, tokenId).seller); 
 
 
@@ -55,8 +55,8 @@ rule call_any_function_should_result_in_each_contract_having_the_same_state(meth
 
 
     assert(gasBadNftMarketplace).getProceeds(e,seller) = nftMarketplace.getProceeds(seller);
-    assert(gasBadNftMarketplace.getListing(listingAddr, tokenId).price == nftMarketplace.getListing
+    assert(gasBadNftMarketplace.getListing(e,listingAddr, tokenId).price == nftMarketplace.getListing
     (listingAddr, tokenId).price); 
-    assert(gasBadNftMarketplace.getListing(listingAddr, tokenId).seller == nftMarketplace.getListing
+    assert(gasBadNftMarketplace.getListing(e,listingAddr, tokenId).seller == nftMarketplace.getListing
     (listingAddr, tokenId).seller); 
 }
