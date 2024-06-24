@@ -3,7 +3,8 @@
 */
 
 methods{
-    function safeTransferFrom(address,address,uint256) external => DISPATCHER(true);
+    function currentContract.safeTransferFrom(address,address,uint256) external => 
+    DISPATCHER(true);
 }
 
 ghost mathint listingUpdateCount{
