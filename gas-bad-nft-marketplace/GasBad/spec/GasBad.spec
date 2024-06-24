@@ -2,10 +2,10 @@
 * Verification of GasBad
 */
 
-ghost mathint listingUpdateCount{
+persistent ghost mathint listingUpdateCount{
     init_state axiom listingUpdateCount == 0;
 }
-ghost mathint log4Count{
+persistent ghost mathint log4Count{
     init_state axiom log4Count == 0;
 }
 
