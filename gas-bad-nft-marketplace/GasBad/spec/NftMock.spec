@@ -4,7 +4,7 @@
 using NftMock as nft;
 
 methods{
-    function totalSupply() external returns uint256 envfree;
+    function totalSupply() external returns uint256 => ALWAYS(1);
     function mint() external;
     function balanceOf(address) external returns uint256 envfree;
 }
