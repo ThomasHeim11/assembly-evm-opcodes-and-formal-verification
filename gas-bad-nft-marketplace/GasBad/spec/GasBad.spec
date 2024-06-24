@@ -2,10 +2,14 @@
 * Verification of GasBad
 */
 
-persistent ghost mathint listingUpdateCount{
+methods{
+    function safeTransferFrom(address,address,uint256) external => DISPATCHER(true);
+}
+
+ghost mathint listingUpdateCount{
     init_state axiom listingUpdateCount == 0;
 }
-persistent ghost mathint log4Count{
+ghost mathint log4Count{
     init_state axiom log4Count == 0;
 }
 
