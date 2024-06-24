@@ -1,6 +1,8 @@
 /*
 * Verification of GasBad
 */
+using GasBasNftMarketplace as GasBasNftMarketplace;
+using NftMarketplace as nftMarketplace;
 
 methods{
     function _.safeTransferFrom(address,address,uint256) external => DISPATCHER(true);
@@ -27,4 +29,14 @@ hook LOG4 (uint offset, uint length, bytes32 t1, bytes32 t2,bytes32 t3, bytes32 
 /////////////////////////////////////////////////////////////////////
 invariant anytime_mapping_update_event(){
     listingsUpdateCount <= log4Count;
+}
+
+rule call_any_function_should_result_in_each_contract_having_the_same_state(method f)
+{
+    env e;
+    calldataarg args;
+    gasBadNftMarketplace.f(e, args);
+    satisfy true;
+
+
 }
