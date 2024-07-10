@@ -1,4 +1,4 @@
-# Assembly, EVM Opcodes, and Formal Verification
+# Assembly, EVM Opcodes, and Formal Verification🎊
 
 Welcome to the repository for the Assembly, EVM Opcodes, and Formal Verification Course by Cyfrin Updraft!
 
